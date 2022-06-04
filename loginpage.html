@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(to left,rgb(238, 57, 57),blueviolet);
+        }
+        #login{
+            border: 1px solid transparent;
+            width: 30%;
+            height: 650px;
+            margin: auto;
+            margin-top: 100px;
+            background-color: white;
+            border-radius: 20px;
+        }
+        h1{
+            text-align: center;
+            padding-top: 30px;
+        }
+        #box{
+            width: 80%;
+            height: 300px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;    
+        }
+        #email{
+            border: 1px solid transparent;
+            margin-top: 50px;
+           padding: 20px;
+            font-size: 25px;
+        }
+        #password{
+            border: 1px solid  transparent;
+            margin-top: 20px;
+            padding: 20px;
+            font-size: 25px;
+        }
+        #btn{
+            border: 1px solid transparent;
+            margin-top: 30px;
+            height: 50px;
+            background-image: linear-gradient(to left,rgb(238, 63, 63),blueviolet);
+            color: white;
+            font-size: 30px;
+        }
+        div+p{
+            color: grey;
+            text-align: center;
+            margin-top: 0px;
+        }
+        #forgot{
+            margin-top: 50px;
+            display: flex;
+            padding-left: 150px;
+        }
+        #forgot>p{
+            color: grey;
+            font-size: 20px;
+        }
+        #signup{
+            margin-top: -25px;
+            display: flex;
+            padding-left: 100px;
+        }
+        #signup>p{
+            color: grey;
+            font-size: 20px;
+        }
+        p+button{
+            color: blueviolet;
+            border: 1px solid transparent;
+            background-color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .horizontal{
+            width: 100%;
+            border: 1px solid transparent;
+            height: 1px;
+            background-color: rgb(174, 174, 174);
+        }
+    </style>
+</head>
+<body>
+    <div id="login">
+        <h1>Login</h1>
+        <div id="box">
+            <input type="email" name="Email" id="email" placeholder="Email">
+            <div class="horizontal"></div>
+            <input type="text" name="password" id="password" placeholder="Password">
+            <div class="horizontal"></div>
+            <button id="btn">Login</button>
+        </div>
+        <div id="forgot">
+            <p>Forgot</p>
+            <button>Password</button>
+            <p>?</p>
+        </div>
+        <div id="signup">
+            <p>Don't have an account?</p>
+            <button> Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
